@@ -18,7 +18,8 @@ footer{
 }
 
 nav{
-    width: 50%;
+    width: 100%;
+    background-color: black;
 }
 
 a{
@@ -164,9 +165,6 @@ main section{
     padding: 20px;
 }
 
-.contacto{
-    background-color: black;
-}
 
 .contactoImg img{
     width: 50%;
@@ -177,14 +175,6 @@ main section{
     width: 80%;
     background-color: orange;
     padding: 20px;
-}
-
-.contacto form{
-    padding: 50px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    background-color: orange;
 }
 
 .inicioImg{
@@ -248,4 +238,51 @@ main section{
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: flex-end;
+}
+
+#grilla {
+    display: grid;
+    grid-template-areas:
+      "mapa nombre mail"
+      "mapa asunto telefono"
+      "mapa mensaje mensaje";
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+
+}
+
+.mapa {
+    grid-area: mapa;
+    width: 100%;
+    padding: 10px;
+}
+.nombre {
+    grid-area: nombre;
+    width: 100%;
+    padding: 10px;
+}
+.mail {
+    grid-area: mail;
+    width: 100%;
+    padding: 10px;
+}
+.asunto {
+    grid-area: asunto;
+    width: 100%;
+    padding: 10px;
+}
+.telefono {
+    grid-area: telefono;
+    width: 100%;
+    padding: 10px;
+}
+.mensaje {
+    grid-area: mensaje;
+    width: 100%;
+    padding: 10px;
+}
+.border {
+    border: 1px solid black;
 }
