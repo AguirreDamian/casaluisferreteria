@@ -1,0 +1,26 @@
+/* Reset de css Normalizado*/
+@import "./normalize/reset";
+@import "./normalize/normalize";
+
+/*Colores principales*/
+@import "./colors/mainColors";
+
+/*Componentes Generales*/
+@import "./components/navbar";
+@import "./components/buttons";
+@import "./components/variables";
+@import "./components/cards";
+@import "./components/footer";
+
+/*variables especificas*/
+@import "./view/nosotros";
+@import "./view/catalogo";
+@import "./view/contacto";
+
+/*Grid*/
+@import "./layout/grid";
+
+
+
+
+

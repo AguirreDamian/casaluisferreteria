@@ -1,0 +1,68 @@
+@import "../colors/mainColors";
+
+
+
+.producto {
+
+    & ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-content: space-around;
+        margin: 50px;
+    }
+
+
+    &__titulo {
+        background-color:$primary;
+        padding: 10px;
+        text-align: center;
+    }
+
+    &__img img {
+        width: 100%;
+        padding: 20px;
+    }
+
+    &__caja {
+        background-color:$secondary;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__p {
+        background-color:$primary;
+        padding: 10px;
+        text-align: center;
+    }
+
+    &__carrito {
+        text-align: center;
+        padding: 10px;
+    }
+}
+
+.pagar {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: $primary;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+
+    & div {
+        width: 100%;
+        padding: 20px;
+    }
+    
+    & div img {
+        width: 50%;
+    }
+    
+    & form {
+        background-color: $terciary;
+        width: 50%;
+    }
+}
+

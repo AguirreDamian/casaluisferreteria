@@ -1,0 +1,17 @@
+@import "../colors/mainColors";
+
+
+.contacto {
+
+        &__img {
+        width: 50%;
+        padding: 20px;
+        }   
+        &__div {
+            width: 80%;
+            background-color: $primary;
+            padding: 20px;
+        }
+    
+
+}

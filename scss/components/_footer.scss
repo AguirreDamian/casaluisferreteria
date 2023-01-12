@@ -1,0 +1,15 @@
+@import "../colors/mainColors";
+
+
+footer {
+    display: flex;
+    font-size: 30px;
+    background-color: $primary;
+    padding: 5px;
+}
+
+.footerContacto {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

@@ -1,0 +1,28 @@
+
+.nosotros {
+    width: 100%;
+    display: inline-block;
+
+    &__img img {
+        float: left;
+        width: 30%;
+        height: auto;
+        margin: 30px;
+    }
+    
+    &__img--right img {
+        float: right;
+        width: 30%;
+        height: auto;
+        margin: 30px;
+    }
+    
+    & ul {
+        width: 100%;
+        padding: 30px;
+        font-size: 25px;
+    }
+
+
+}
+

@@ -1,0 +1,23 @@
+@import "../colors/mainColors";
+
+
+.barraNav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 100%;
+    align-items: center;
+
+
+    & li a {
+        background-color: $primary;
+        padding: 25%;
+        border-radius: 30%;
+    }
+    
+    & li a:hover {
+        background-color:$primary;
+    }
+}
+
+
