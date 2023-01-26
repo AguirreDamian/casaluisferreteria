@@ -18,11 +18,17 @@
 }
 
 .inicioImg {
+    width: 100%;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 
     & img {
         width: 50%;
         padding: 20px;
+        border-radius: 50px;
+
     }
 }
 
