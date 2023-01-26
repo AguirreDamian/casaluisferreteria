@@ -1,0 +1,113 @@
+@import "../colors/mainColors";
+
+
+
+.contact_form {
+    width: 460px;
+    height: auto;
+    margin: 80px auto;
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: rgb(255, 236, 199);
+    padding-left: 30px;
+}
+
+
+.input_contacto {
+    background-color: $terciary;
+    width: 408px;
+    height: 40px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: orange;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+
+.textarea_contacto {
+    background-color: $terciary;
+    width: 405px;
+    height: 150px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: $primary;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    padding-top: 15px;
+}
+
+
+.label_contacto {
+    display: block;
+    float: center;
+}
+
+
+.button_contacto {
+    height: 45px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    background-color: $primary;
+    border-color: $secondary;
+    border-style: solid;
+    border-radius: 10px;
+    width: 420px;
+    cursor: pointer;
+
+    & p {
+        color: $terciary;
+    }
+
+}
+
+
+.span_contacto {
+    color: $secondary;
+}
+
+
+.aviso {
+    font-size: 13px;
+    color: $secondary;
+}
+
+
+.h1_contacto {
+    font-size: 39px;
+    text-align: letf;
+    padding-bottom: 20px;
+    color: $secondary;
+}
+
+
+.h3_contacto {
+    font-size: 16px;
+    padding-bottom: 30px;
+    color: $secondary;
+}
+
+
+.p_contacto {
+    font-size: 14px;
+    color: $secondary;
+}
+
+.formulario input:focus {
+    outline: 0;
+    border: 1px solid $secondary;
+}
+
+
+.formulario textarea:focus {
+    outline: 0;
+    border: 1px solid $secondary;
+}

@@ -29,8 +29,8 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">CASALUIS - FERRETERIA</a>
-                alt="casaluisLogo"></a>
+                <a class="navbar-brand" href="#">CASALUIS - FERRETERIA</a> alt="casaluisLogo">
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02"
                     aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -63,40 +63,71 @@
     </header>
     <main>
         <!--caja de contacto-->
-        <section id="grilla">
-            <div>
-                <img class="mapa" src="../assets/img/googlemap.JPG" alt="imagen del mapa de google">
+        <div class="contact_form">
+
+            <div class="formulario">
+                <h1 class="h1_contacto">Formulario de contacto</h1>
+                <h3 class="h3_contacto">Escríbenos y en breve los pondremos en contacto contigo</h3>
+
+
+                <form action="submeter-formulario.php" method="post">
+
+
+                    <p class="p_contacto ">
+                        <label for="nombre" class="label_contacto">Nombre
+                            <span class="obligatorio">*</span>
+                        </label>
+                        <input  class="input_contacto" type="text" name="introducir_nombre" id="nombre" required="obligatorio"
+                            placeholder="Escribe tu nombre">
+                    </p>
+
+                    <p class="p_contacto ">
+                        <label for="email" class="label_contacto">Email
+                            <span class="obligatorio">*</span>
+                        </label>
+                        <input class="input_contacto" type="email" name="introducir_email" id="email" required="obligatorio"
+                            placeholder="Escribe tu Email">
+                    </p>
+
+                    <p class="p_contacto ">
+                        <label for="telefone" class="label_contacto">Teléfono
+                        </label>
+                        <input class="input_contacto" type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                    </p>
+
+                    <p class="p_contacto ">
+                        <label for="asunto" class="label_contacto">Asunto
+                            <span class="obligatorio">*</span>
+                        </label>
+                        <input class="input_contacto" type="text" name="introducir_asunto" id="assunto" required="obligatorio"
+                            placeholder="Escribe un asunto">
+                    </p>
+
+                    <p class="p_contacto ">
+                        <label for="mensaje" class="label_contacto">Mensaje
+                            <span class="obligatorio">*</span>
+                        </label>
+                        <textarea name="introducir_mensaje" class="textarea_contacto" id="mensaje" required="obligatorio"
+                            placeholder="Deja aquí tu mensaje..."></textarea>
+                    </p>
+
+                    <button class="button_contacto" type="submit" name="enviar_formulario" id="enviar">
+                        <p>Enviar</p>
+                    </button>
+
+                    <p class="aviso">
+                        <span class="obligatorio"> * </span>los campos son obligatorios.
+                    </p>
+
+                </form>
             </div>
-            <div class="mb-3 nombre">
-                <label for="exampleFormControlInput1" class="form-label">Nombre</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
-            </div>
-    
-            <div class="mb-3 email">
-                <label for="exampleFormControlInput1" class="form-label">Direccion de Email</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
-            </div>
-    
-            <div class="mb-3 telefono">
-                <label for="exampleFormControlInput1" class="form-label">Telefono de contacto</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
-            </div>
-    
-            <div class="mb-3 asunto">
-                <label for="exampleFormControlInput1" class="form-label">Asunto</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
-            </div>
-    
-            <div class="mb-3 mensaje">
-                <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
-        </section>
+        </div>
+
 
 
 
     </main>
-    <footer class="footerContacto">
+    <footer>
         <div>
             Todos los derechos reservados CASALUIS®
         </div>
